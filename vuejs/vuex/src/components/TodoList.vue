@@ -1,20 +1,20 @@
 <template>
   <div>
-    <!-- <TodoListItem
-    v-for="todo on todos"
+    <TodoListItem
+    v-for="todo in todos"
     :key="todo.date"
-    :todo="todo"/> -->
+    :todo="todo"/>
 
   </div>
 </template>
 
 <script>
-// import TodoListItem from '@/components/TodoListItem.vue';
+import TodoListItem from '@/components/TodoListItem.vue';
 
 export default {
   name: 'TodoList',
   components: {
-    // TodoListItem,
+    TodoListItem,
   },
   computed: {
     todos() {

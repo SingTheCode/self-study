@@ -1,9 +1,9 @@
 <template>
   <div id="app">
    <h1>Todo List</h1>
-   <h2>전체 Todo 갯수</h2>
-   <h2>완료한 Todo 갯수</h2>
-   <h2>완료 x 갯수</h2>
+   <h2>전체 Todo 갯수 {{allTodosCount}}</h2>
+   <h2>완료한 Todo 갯수 {{completedTodosCount}}</h2>
+   <h2>완료 x 갯수 {{uncompletedTodosCount}}</h2>
    <hr>
    <TodoForm/>
    <hr>
@@ -14,11 +14,15 @@
 <script>
 import TodoForm from '@/components/TodoForm.vue';
 import TodoList from '@/components/TodoList.vue';
+import { mapGetters } from 'vuex';
 
 export default {
   name: 'App',
   components: {
     TodoForm, TodoList
+  },
+  computed: {
+    ...mapGetters(['allTodosCount', 'completedTodosCount', 'uncompletedTodosCount'])
   }
 }
 </script>
