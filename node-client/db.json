@@ -1,0 +1,33 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "value": "밥먹다."
+    },
+    {
+      "id": 2,
+      "value": "자다."
+    },
+    {
+      "id": 3,
+      "value": "노래하다."
+    }
+  ],
+  "user": [
+    {
+      "name": "mimmi",
+      "pw": "sdifa",
+      "id": 1
+    },
+    {
+      "name": "dfalsjdf",
+      "pw": "sdofjpasdf",
+      "id": 2
+    },
+    {
+      "name": "efalif",
+      "pw": "sadflkj;ad",
+      "id": 3
+    }
+  ]
+}
